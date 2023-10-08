@@ -1,11 +1,10 @@
 // NewMessage.tsx
 //import React, { useState } from 'react';
-import { useNewMessage } from '../hooks/useNewMessage';
-
+import { useNewMessage } from "../hooks/useNewMessage";
 
 export const NewMessage = () => {
   const { message, setMessage, handleSubmit } = useNewMessage();
-    
+
   return (
     <div className="new-message">
       <input

@@ -1,7 +1,7 @@
-import { useState } from 'react';
+import { useState } from "react";
 
 export const useNewMessage = () => {
-  const [message, setMessage] = useState<string>(''); // État du message
+  const [message, setMessage] = useState<string>(""); // État du message
 
   // Fonction pour gérer la soumission du message
   const handleSubmit = (newMessage: string) => {
@@ -10,4 +10,3 @@ export const useNewMessage = () => {
 
   return { message, setMessage, handleSubmit };
 };
-

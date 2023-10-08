@@ -10,13 +10,12 @@ export const useProfile = () => {
   const [loading, setLoading] = useState(true);
 
   useMountEffects(() => {
-  (async () => {
-    const nextProfile = createUser(PROFILE_USER_ID);
-    setProfile(nextProfile);
-    setLoading(false);
+    (async () => {
+      const nextProfile = createUser(PROFILE_USER_ID);
+      setProfile(nextProfile);
+      setLoading(false);
     })();
-    });
+  });
 
-  return { profile,loading };
-}
-
+  return { profile, loading };
+};
